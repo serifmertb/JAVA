@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import static java.lang.Math.sqrt;
+import static java.lang.Math.pow;
+
+public class Main {
+    public static void main(String[] args) {
+        int dik1, dik2;
+        double hipotenus;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Dik 1: ");
+        dik1 = scanner.nextInt();
+
+        System.out.print("Dik 2: ");
+        dik2 = scanner.nextInt();
+
+        hipotenus = sqrt(pow(dik1, 2) + pow(dik2, 2));
+        System.out.println("Hipotenüs: " + hipotenus);
+
+    }
+}
