@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        double km, ücret ;
+
+        System.out.print("Km :");
+        km= input.nextDouble();
+
+        int acılıs=10;
+
+        ücret=(km*2.2)+10;
+
+        System.out.print("ücret :"+ücret);
+
+    }
+}
