@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import static java.lang.Math.sqrt;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        double a, b, c;
+        double u, alan;
+
+        System.out.println("a kenarı:");
+        a = scan.nextDouble();
+        System.out.println("b kenarı");
+        b = scan.nextDouble();
+        System.out.println("c kenarı");
+        c = scan.nextDouble();
+
+        u=(a+b+c)/2;
+        alan = sqrt(u*(u-a)*(u-b)*(u-c));
+
+        System.out.println("Alan: "+alan);
+
+    }
+}
