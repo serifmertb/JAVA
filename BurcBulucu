@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int gun, ay;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen doğum gününü giriniz: ");
+        gun = input.nextInt();
+        System.out.print("Lütfen doğum ayını giriniz: ");
+        ay = input.nextInt();
+
+        switch (ay) {
+            case 1:
+                if (gun >= 1 && gun <= 21) {
+                    System.out.println("Oğlak");
+                } else if (gun >= 22 && gun <= 31) {
+                    System.out.println("Kova");
+                }
+                break;
+            case 2:
+                if (gun >= 1 && gun <= 19) {
+                    System.out.println("Kova");
+                } else if (gun >= 20 && gun <= 28) {
+                    System.out.println("Balık");
+                }
+                break;
+            case 3:
+                if (gun >= 1 && gun <= 20) {
+                    System.out.println("Balık");
+                } else if (gun >= 21 && gun <= 31) {
+                    System.out.println("Koç");
+                }
+                break;
+            case 4:
+                if (gun >= 1 && gun <= 20) {
+                    System.out.println("Koç");
+                } else if (gun >= 21 && gun <= 30) {
+                    System.out.println("Boğa");
+                }
+                break;
+            case 5:
+                if (gun >= 1 && gun <= 21) {
+                    System.out.println("Boğa");
+                } else if (gun >= 22 && gun <= 31) {
+                    System.out.println("İkizler");
+                }
+                break;
+            case 6:
+                if (gun >= 1 && gun <= 22) {
+                    System.out.println("İkizler");
+                } else if (gun >= 23 && gun <= 30) {
+                    System.out.println("Yengeç");
+                }
+                break;
+            case 7:
+                if (gun >= 1 && gun <= 22) {
+                    System.out.println("Yengeç");
+                } else if (gun >= 23 && gun <= 31) {
+                    System.out.println("Aslan");
+                }
+                break;
+            case 8:
+                if (gun >= 1 && gun <= 22) {
+                    System.out.println("Aslan");
+                } else if (gun >= 23 && gun <= 31) {
+                    System.out.println("Başak");
+                }
+                break;
+            case 9:
+                if (gun >= 1 && gun <= 22) {
+                    System.out.println("Başak");
+                } else if (gun >= 23 && gun <= 30) {
+                    System.out.println("Terazi");
+                }
+                break;
+            case 10:
+                if (gun >= 1 && gun <= 22) {
+                    System.out.println("Terazi");
+                } else if (gun >= 23 && gun <= 31) {
+                    System.out.println("Akrep");
+                }
+                break;
+            case 11:
+                if (gun >= 1 && gun <= 21) {
+                    System.out.println("Akrep");
+                } else if (gun >= 22 && gun <= 30) {
+                    System.out.println("Yay");
+                }
+                break;
+            case 12:
+                if (gun >= 1 && gun <= 21) {
+                    System.out.println("Yay");
+                } else if (gun >= 22 && gun <= 31) {
+                    System.out.println("Oğlak");
+                }
+                break;
+            default:
+                System.out.println("Geçersiz ay!");
+                break;
+        }
+
+    }
+}
