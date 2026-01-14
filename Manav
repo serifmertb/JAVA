@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int armutkg, elmakg, domateskg, muzkg, patlicankg;
+
+        System.out.print("Armut kg girin: ");
+        armutkg = scan.nextInt();
+
+        System.out.print("Elma kg girin: ");
+        elmakg = scan.nextInt();
+
+        System.out.print("Domates kg girin: ");
+        domateskg = scan.nextInt();
+
+        System.out.print("Muz kg girin: ");
+        muzkg = scan.nextInt();
+
+        System.out.print("Patlican kg girin: ");
+        patlicankg = scan.nextInt();
+
+        double armut=2.14, elma=3.67, domates=1.11, muz=0.95, patlıcan=5.00, Toplamücret;
+
+        Toplamücret=(armutkg*armut)+(elma*elmakg)+(domates*domateskg)+(muzkg*muz)+(patlıcan*patlicankg);
+
+        System.out.println("Toplam Ücret :"+ Toplamücret);
+
+    }
+}
